@@ -1,0 +1,20 @@
+{
+  "name": "chess-legality-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "标准国际象棋合法走子与王安全核验后端（TypeScript + Node.js + SQLite）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js serve",
+    "test": "node --import tsx --test test/*.test.ts",
+    "demo": "node dist/cli.js demo",
+    "perft": "node dist/cli.js perft"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
+
